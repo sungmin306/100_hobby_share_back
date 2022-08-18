@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}   
+<form action="{% url 'create' %}" method="POST">
+    {% csrf_token %}
+    <div>
+        <label for="'MBTI">MBTI</label>
+        <input type="text" name="MBTI" id="MBTI">
+    </div>
+    <div>
+        <label for="'cate">category</label>
+        <input type="text" name="cate" id="cate">
+    </div>
+    <div>
+        <label for="'first">first</label>
+        <input type="number" name="first" id="first">
+    </div>
+    <div>
+        <label for="'second">second</label>
+        <input type="number" name="second" id="second">
+    </div>
+    <div>
+        <label for="'third">third</label>
+        <input type="number" name="third" id="third">
+    </div>
+    <input type="submit" value="취미 확인하러가기">
+</form>
+{% endblock %}
