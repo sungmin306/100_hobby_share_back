@@ -45,3 +45,5 @@ urllib3==1.26.9
 whitenoise==6.2.0
 Whoosh==2.7.4
 wsproto==1.1.0
+environ
+django-environ
